@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Socket Sample</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="loginForm">
+			<h3>What's your name?</h3>
+			<input type="text" id="username">
+			<button id="register">Register</button>
+		</div>
+		<div id="chatForm">
+			<div id="left">
+				<div id="title">Users Online</div>
+        <div id="users"></div>
+			</div>
+			<div id="right">
+				<div id="sayHi">
+          Hi, <span id="currentUser">Guess</span>
+          <button id="logout">Logout</button>
+				</div>
+				<div id="listMessages"></div>
+				<div id="notify"></div>
+        <input type="text" id="message"/>
+        <button id="sendMessage">SEND</button>
+			</div>
+		</div>
+	</div>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>
